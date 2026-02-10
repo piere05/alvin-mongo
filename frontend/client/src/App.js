@@ -98,6 +98,9 @@ function App(){
           {editId ? "Update" : "Add"}
         </button>
       </form>
+{ students.length===0 && <h3>No students found</h3> }
+{ students.length>0 && (
+  <>
 
       <table>
         <thead>
@@ -127,6 +130,9 @@ function App(){
           ))}
         </tbody>
       </table>
+
+      </>
+)}
 
     </div>
   )
